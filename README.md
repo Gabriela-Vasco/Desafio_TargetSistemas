@@ -1,4 +1,4 @@
-Desafio técnico para a vaga de Estágio em Desenvolvimento da Target Sistemas
+## Desafio técnico para a vaga de Estágio em Desenvolvimento da Target Sistemas
 
 Nele estão tanto as respostas em arquivos .txt, quanto os códigos em JavaScript, incorporados em uma página HTML para melhor visualização. 
 
