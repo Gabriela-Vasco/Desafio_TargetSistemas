@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Target Sistemas</title>
+</head>
+<body>
+    <h1>Desafio Target Sistemas</h1>
+
+    
+    <form id="fibonacciForm" style="margin: 20px 0">
+        <label for="numeroVerificado">Número para verificar Fibonacci:</label>
+        <input type="number" id="numeroVerificado" name="numeroVerificado" required>
+        <button type="button" onclick="onClickVerificarFibonacci()">Verificar Fibonacci</button>
+    </form>
+
+    <form id="stringForm" style="margin-bottom: 20px">
+        <label for="minhaString">String para inverter:</label>
+        <input type="text" id="minhaString" name="minhaString" required>
+        <button type="button" onclick="onClickInverterString()">Inverter String</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="questao_2.js"></script>
+    <script src="questao_5.js"></script>
+
+    <script>
+        function exibirNaTela(mensagem) {
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML += `<p>${mensagem}</p>`;
+        }
+
+        function onClickVerificarFibonacci() {
+            const numeroVerificado = parseInt(document.getElementById('numeroVerificado').value);
+            const resultado = verificaFibonacci(numeroVerificado)
+            if (resultado) {
+                exibirNaTela(numeroVerificado + " pertence à sequência de Fibonacci.");
+            } else {
+                exibirNaTela(numeroVerificado + " não pertence à sequência de Fibonacci.");
+            }
+        }
+
+        function onClickInverterString() {
+            let str = document.getElementById("minhaString").value;
+            let novaString = inverterString(str);
+            document.getElementById("output").innerText = "String invertida: " + novaString;
+        }
+
+    </script>
+</body>
+</html>

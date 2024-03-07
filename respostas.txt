@@ -1,0 +1,37 @@
+Questão 1: 
+Temos as variáveis INDICE, SOMA e K sendo inicializadas com os valores 13, 0 e 0, respectivamente. 
+Em seguida, entra no laço enquanto, que continua enquanto K for menor que INDICE. No início, K é 0 e INDICE é 13, então o laço será executado.
+A cada iteração do laço, K é incrementado em 1 e SOMA é atualizado com o valor de K adicionado a SOMA.
+Assim, o laço vai ser executado 13 vezes, já que K vai de 0 a 12 (incluindo estes indíces).
+Após a última iteração, SOMA conterá a soma dos números de 1 a 13.
+Portanto o valor de soma é 91.
+
+Questão 2: Arquivo questao_2.js
+
+Questão 3:
+    a - A sequência está aumentando de 2 em 2. O próximo número seria 9.
+    b - Cada número é o dobro do anterior. O próximo número seria 128.
+    c - Cada número é o quadrado do índice da posição na sequência. O próximo número seria 49 (7^2).
+    d - Os números são os quadrados dos números ímpares (1^2, 3^2, 5^2, 7^2). O próximo número seria 100 (9^2).
+    e - Essa é a sequência de Fibonacci. O próximo número é 13.
+    f - Observando as diferenças, podemos notar que inicialmente há uma diferença de 8 (10 - 2), depois de 2 (12 - 10), depois de 4 (16 - 12), e finalmente de 1 (17 - 16, 18 - 17, 19 - 18). Isso mostra que há uma mudança na sequência de como os números estão aumentando. Inicialmente, a diferença é de 8, então diminui para 2, depois aumenta para 4, e finalmente estabiliza em 1.
+    Portanto o próximo número é 20 (19+1).
+
+Questão 4:
+    Para resolver o problema dos interruptores e das lâmpadas com apenas duas idas até uma das salas das lâmpadas, podemos seguir esses passos:
+    Primeira visita:
+        - Ligamos o primeiro interruptor por um curto período de tempo e depois desligamos.
+        - Em seguida, ligamos o segundo interruptor, deixando-o ligado.
+        - Mantemos o terceiro interruptor desligado.
+
+        Após essa etapa, observamos o estado das lâmpadas nas salas:
+            Se a lâmpada estiver acesa, isso significa que o primeiro interruptor controla essa lâmpada.
+        Se a lâmpada estiver apagada e quente, concluímos que o segundo interruptor controla essa lâmpada.
+        Se a lâmpada estiver apagada e fria, então o terceiro interruptor controla essa lâmpada.
+
+    Na segunda visita, vamos até a sala das lâmpadas e observamos o estado de cada uma delas:
+        A lâmpada que estiver acesa foi controlada pelo primeiro interruptor.
+        A lâmpada que estiver apagada e quente foi controlada pelo segundo interruptor.
+        A lâmpada que estiver apagada e fria foi controlada pelo terceiro interruptor.
+
+Questão 5: Resposta no arquivo questao_5.js
